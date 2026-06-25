@@ -11,7 +11,7 @@ st.set_page_config(page_title="Auditor de Inversiones", page_icon="📈", layout
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 genai.configure(api_key=GOOGLE_API_KEY)
-modelo_vision = genai.GenerativeModel('gemini-1.5-pro')
+modelo_vision = genai.GenerativeModel('gemini-1.5-flash')
 
 def buscar_cedear(ticker):
     """Busca en Yahoo Finance si existe el CEDEAR en la bolsa argentina"""
